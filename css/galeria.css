@@ -1,0 +1,16 @@
+.galeria .imagenes img {
+	width: 200px;
+	padding: 10px;
+	border-radius: 20px;	
+	filter: grayscale();
+	transition: 0.7s;
+}
+
+	.galeria .imagenes img:hover {
+		filter: grayscale(0);
+		transform: scale(1.1);
+	}
+
+	.galeria .imagenes a {
+		background-color: #C09F80;
+	}

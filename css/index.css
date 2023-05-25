@@ -1,0 +1,314 @@
+/* PALETA DE COLORES
+GRAIN: #D7CEC7;
+BLACKBOARD: #565656;
+OXBLOOD: #76323F;
+TAN: #C09F80;
+*/
+
+*{margin: 0px; padding: 0px;}
+
+@font-face {
+	font-family: oswald;
+	src: url(fuentes/Oswald-Regular.ttf);
+}
+
+@font-face {
+	font-family: raleway;
+	src: url(fuentes/Raleway-Regular.ttf);
+}
+
+body {
+	background-color: #d7cec7;
+	min-width: 1280px;
+}
+	
+	.wrapper {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	max-width: 1000px;
+	}
+
+	header {
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 20px;
+		font-family: oswald;
+	}
+
+/*-------------------------------------------------------------*/
+
+		nav.black {
+			height: 80px;
+			max-height: 80px;
+			background: rgba(86,86,86,0.9);
+			top: 0;
+			box-shadow: 0px 4px 3px rgba(0,0,0,.5);
+			z-index: 100;
+		}
+
+			nav.black .logo {
+				line-height: 80px;
+				transition: .5s;
+				height: 80px;
+			}	
+
+				nav.black .logo img {
+					padding-left: 0;
+					padding-top: 10px;
+					width: 60px;
+					transition: .5s;
+				}
+
+			nav.black .menu {
+				line-height: 80px;
+			}
+
+		nav.black .wrapper {
+			height: 82px;
+		}
+/*-------------------------------------------------------------*/
+
+		nav {
+			position: fixed;
+			height: 150px;
+			max-height: 150px;
+			top: 42;
+			left: 0;
+			width: 100%; 
+			box-sizing: border-box;
+			transition: .5s;
+			display: inline-block;
+			background: rgba(86,86,86,0.9);
+			box-shadow: 0px 6px 3px rgba(0,0,0,.5);	
+		}
+
+			div.wrapper {
+				height: 150px;
+			}
+
+			nav .logo {
+				float: left;
+				line-height: 150px;
+			}
+
+				div.logo {
+					height: 150px;
+				}
+
+				nav .logo img {
+					padding-left: 100px;
+					width: 100px;
+					transition: .5s;
+					padding-top: 35px;
+				}
+
+			nav ul {
+				float: right;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				line-height: 150px;
+				padding: auto;
+			}
+
+				nav ul li {
+					list-style: none;
+				}
+
+					nav ul li a {
+					font-size: 20px;
+					font-weight: bold;
+					color: #c09f80;
+					padding: 5px 20px;
+					text-decoration: none;
+					text-transform: uppercase;
+					transition: .5s;
+					}
+
+				nav ul img {
+					width: 13px;
+				}
+
+
+.BgImg {
+	background-image: url(../Imágenes/Cabecera/portada.jpg); 
+	background-size: 100%; 
+	background-repeat: no-repeat; 
+	min-width: 1280px;
+	max-width: 2400px;
+}
+
+/*--------------------------------------------------------------*/
+/*Cuerpo*/
+
+.cuerpo {
+	font-family: raleway;
+}
+
+/*--------------------------------------------------------------*/
+/*Footer*/
+
+	footer {
+		background-color: #565656;
+	}
+
+	footer table td a {
+		font-family: oswald;
+		text-decoration: none;
+		color: #D7CEC7;
+		font-size: 17px;
+	}	
+
+		footer table td table td {
+			padding: 5px 5px;
+		}
+
+/*--------------------------------------------------------------*/
+/*Estilos de texto*/
+
+
+.Titulos {
+	font-family: oswald;
+	color: #76323f;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.Texto1 {
+	color: #565656;
+	font-size: 20px;
+}
+
+.Texto2 {
+	font-family: oswald;
+	color: #565656;
+	font-size: 15px;
+}
+
+.Hipervinculos {
+	color: #76323f;
+	font-size: 30px;
+}
+
+/*--------------------------------------------------------------*/
+/*ARTICLE*/
+
+.imagenes {
+	background-color: #C09F80;
+	border-radius: 10px;
+	padding-bottom: 15px;
+}
+
+	.imagenes table {
+		width: 360px;
+		margin: auto;
+		overflow: hidden;
+	}
+
+		.imagenes table td {
+			padding: 8px 10px;
+		}
+
+			.imagenes table td img {
+				width: 100%;
+				border-radius: 10px;
+			}
+
+			.imagenes a {
+				padding: 5px 20px;
+				margin-left: 10px;
+				font-weight: bold;
+				background-color: #565656;
+				color: #C09F80;
+				border-radius: 10px;
+			}
+
+.contacto {
+	background-color: #C09F80;
+	border-radius: 10px;
+	padding-bottom: 15px;
+}
+
+	.contacto table td {
+		padding-top: 5px;
+		padding-left: 10px;
+	}
+
+/*--------------------------------------------------------------*/
+/*RESPONSIVE*/
+
+/*LAPTOPS (1024px)----------------------------------------------*/
+@media screen and (max-width: 1024px){
+
+	/*FONTS STYLE-------------------------------------*/
+	.Titulos {
+		font-family: oswald;
+		color: #76323f;
+		font-size: 50px;
+		font-weight: bold;
+	}
+
+	.Texto1 {
+		color: #565656;
+		font-size: 25px;
+	}
+
+	.Texto2 {
+		color: #76323f;
+		font-size: 35px;
+	}
+
+	nav ul li a {
+		font-size: 25px;
+	}
+
+	/*----------------------------------------------------------*/
+	#SH-body {
+		border-bottom: 3px solid #c09f80;
+	}
+
+	#SH-body tr {
+		height: 50px;
+	}
+}
+
+/*TABLETS (768px)-----------------------------------------------*/
+@media screen and (max-width: 768px){
+
+	/*FONTS STYLE-------------------------------------*/
+	.Titulos {
+		font-family: oswald;
+		color: #76323f;
+		font-size: 60px;
+		font-weight: bold;
+	}
+
+	.Texto1 {
+		color: #565656;
+		font-size: 80px;
+	}
+
+	.Texto2 {
+		color: #76323f;
+		font-size: 35px;
+	}
+
+	nav ul li a {
+		font-size: 25px;
+	}
+
+	/*----------------------------------------------------------*/
+	#SH-body {
+		border-bottom: 3px solid #c09f80;
+	}
+
+	#SH-body tr {
+		height: 50px;
+	}
+}
+
+/*MOBILE (425px)------------------------------------------------*/
+@media screen and (max-width: 425px){
+
+}
